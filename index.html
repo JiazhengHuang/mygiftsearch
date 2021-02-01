@@ -4,13 +4,124 @@
     <title>index page</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <body>
-    hellow world!
-    Welcome to this
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="#">MyGiftSearch</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">LATEST PICKS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GIFTS BY OCCASION</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Birthday</a>
+              <a class="dropdown-item" href="#">Wedding</a>
+              <a class="dropdown-item" href="#">Holiday</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TYPES OF GIFTS</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Books</a>
+              <a class="dropdown-item" href="#">Games</a>
+              <a class="dropdown-item" href="#">Sports</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOGS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">&nbsp;Sign Up&nbsp;</a></li>
+          <li><a href="#">&nbsp;Login&nbsp;</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div style="background: grey; color: white; border-radius: 5px; text-align: center; margin: center; padding: 8px 15px 6px;">Latest Picks</div>
+
+    <div class="container" style="margin-top: 50px; padding: 50px; border: 2px solid; border-radius: 10px; width: 50%;">
+      <form class="form-inline" action="/action_page.php">
+        <label for="email">&nbsp;I want to get a gift for&nbsp;</label>
+        <select class="form-control">
+          <option>A Male</option>
+          <option>A Female</option>
+          <option>Doesn't matter</option>
+        </select>
+        <br>
+        <label for="pwd">&nbsp;who is my&nbsp;</label>
+        <select class="form-control">
+          <option>Partner</option>
+          <option>Family Member</option>
+          <option>Friend</option>
+        </select>
+      </form>
+      <form class="form-inline" action="/action_page.php">
+        <label for="email">&nbsp;They are&nbsp;</label>
+        <select class="form-control">
+          <option>A Child</option>
+          <option>A Teenager</option>
+          <option>An Adult</option>
+        </select>
+        <br>
+        <label for="pwd">&nbsp;and my budget is&nbsp;</label>
+        <select class="form-control">
+          <option>Under $20</option>
+          <option>Under $50</option>
+          <option>Under $100</option>
+          <option>Doesn't matter</option>
+        </select>
+      </form>
+    </div>
+    
+    <div class="container" style="margin-top: 50px; padding: 50px; width: 80%;">
+      <div class="card" style="width: 300px; float: left;">
+        <img class="card-img-top" style="width: 250px; height: 250px; margin: auto;" src="https://brinenlaw.com/wp-content/uploads/2015/06/brinen-blog-gift-box.jpg" alt="gift image">
+        <div class="card-body">
+          <h7 class="card-title"><b>item name</b></h7>
+          <p class="card-text">This is item informations.</p>
+          <div class="price" style="float: left; font-size: 30px;">$10.00</div>
+          <a href="#" class="btn btn-primary" style="float: right;">Check Out</a>
+        </div>
+      </div>
+      <div class="card" style="width: 300px; float: left;">
+        <img class="card-img-top" style="width: 250px; height: 250px; margin: auto;" src="https://brinenlaw.com/wp-content/uploads/2015/06/brinen-blog-gift-box.jpg" alt="gift image">
+        <div class="card-body">
+          <h7 class="card-title"><b>item name</b></h7>
+          <p class="card-text">This is item informations.</p>
+          <div class="price" style="float: left; font-size: 30px;">$10.00</div>
+          <a href="#" class="btn btn-primary" style="float: right;">Check Out</a>
+        </div>
+      </div>
+      <div class="card" style="width: 300px; float: left;">
+        <img class="card-img-top" style="width: 250px; height: 250px; margin: auto;" src="https://brinenlaw.com/wp-content/uploads/2015/06/brinen-blog-gift-box.jpg" alt="gift image">
+        <div class="card-body">
+          <h7 class="card-title"><b>item name</b></h7>
+          <p class="card-text">This is item informations.</p>
+          <div class="price" style="float: left; font-size: 30px;">$10.00</div>
+          <a href="#" class="btn btn-primary" style="float: right;">Check Out</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
